@@ -1,0 +1,306 @@
+* {
+    font-family: 'Lora', serif;
+    font-family: 'Square Peg', cursive;
+
+}
+
+body {
+    margin: 0;
+    background-color: rgb(207, 207, 207);
+}
+
+
+
+
+
+
+
+
+.topnav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topnav a {
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 22px 30px 22px 30px;
+
+}
+
+
+.furinalogo {
+    width: 70px;
+}
+
+.logotext {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.topnav a:hover {
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    background:url(./imagenes/header-image.jpg);
+    color: white;
+    height: 630px;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-position: center;
+}
+
+
+.dark-overlay {
+    background-color: rgb(0, 0, 0);
+    height: 630px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0.6;
+}
+
+.texto {
+    z-index: 10;
+}
+
+
+.about-content {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    padding: 30px 300px 50px 300px;
+}
+
+.about-tittle, .menu-tittle, .where-title, .offer-title {
+    background: rgb(34, 24, 24);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    margin: 100px 650px 0px 650px;
+    width: 250px;
+}
+
+.about-image {
+    display: flex;
+    justify-content: right;
+    width: 30%;
+    background-size: cover;
+}
+
+
+
+
+
+
+.menu-content {
+    font-size: 35px;
+    color: black;
+    height: 100%;
+    width: 1000px;
+    margin: auto;
+}
+
+.menu-content-items {
+    padding: 30px;
+    margin: 30px;
+    box-shadow: 0 3px 13px 1px rgb(155, 155, 155);
+    background-color: rgb(242, 242, 242);
+
+}
+
+.menu-content-items:hover {
+    background-color: rgb(185, 185, 185);
+}
+
+
+
+.menu-content-item {
+    margin-top: -5px;
+    font-size: 30px;
+    color: black;
+}
+
+.description {
+    font-size: 17px;
+    margin-top: -40px;
+    color: black;
+}
+
+.price {
+    float: right;
+    margin-top: -70px;
+    margin-right: 15px;
+    background-color: black;
+    color: white;
+}
+
+
+.wallahi {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.spam {
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgb(34, 21, 21);
+    border-radius: 50px;
+    padding: 20px;
+    margin: 100px 0 100px 0;
+    width: 500px;
+}
+
+.spam a {
+    color: white;
+}
+
+.spam:hover {
+    background-color: rgb(211, 71, 71);
+    transition: 0.6s;
+}
+
+
+
+
+
+
+
+
+.where-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+}
+
+.where-img {
+    width: 80%;
+    background-color: rgb(34, 21, 21);
+
+}
+
+
+
+.footer-img img {
+    width: 8%;
+}
+
+.footer-img, .footer-copyright {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    background: rgb(24, 21, 21);
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(24, 21, 21);
+    color: white;
+    justify-content: space-around;
+}
+
+.footer-contact li, .footer-about li, .footer-sm li, .footer-cafe li {
+    list-style: none;
+}
+
+.footer-about a, .footer-sm a, .footer-cafe a {
+    color: white;
+}
+
+.footer-copyright {
+    border-bottom: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.offer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.offer-gallery img {
+    width: 15%;
+    background-size: cover;
+    height: 50%;
+    border-radius: 200px;
+    padding: 50px;
+}
+
+.offer-gallery {
+    display: flex;
+    justify-content: center;
+
+}
+
+.offer-text{
+   font-size: 20px;
+    width: 50%;
+    margin-top: -100px;
+}
+
+.offer-text-container {
+    display: flex;
+    justify-content: center;
+}
+
+.offer-lf {
+    font-size: 30px;
+    text-align: center;
+    padding: 80px;
+}
+
+.offer-title {
+    text-align: center;
+}
+
+.offer-lf a {
+    color: brown;
+}
+.offer-lf a:hover {
+    color: blue;
+}
