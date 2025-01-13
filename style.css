@@ -1,6 +1,6 @@
 * {
-    font-family: 'Lora', serif;
     font-family: 'Square Peg', cursive;
+    box-sizing: border-box;
 
 }
 
@@ -33,7 +33,7 @@ body {
     font-size: 19px;
     text-align: center;
     transition: all 0.3s ease;
-    padding: 22px 30px 22px 30px;
+    padding: 22px 30px;
 
 }
 
@@ -51,19 +51,6 @@ body {
 .topnav a:hover {
     background-color: gray;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -102,50 +89,76 @@ body {
 }
 
 
+
+
+
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 0 120px;
+    flex-direction: column;
+}
+
+
+
+
 .about-content {
     display: flex;
-    justify-content: left;
-    align-content: center;
-    padding: 30px 300px 50px 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-tittle, .menu-tittle, .where-title, .offer-title {
     background: rgb(34, 24, 24);
     color: white;
-    display: flex;
-    justify-content: center;
-    padding: 1px;
-    margin: 100px 650px 0px 650px;
-    width: 250px;
+    width: 200px;
+    text-align: center;
 }
 
 .about-image {
-    display: flex;
-    justify-content: right;
-    width: 30%;
+    width: 300px;
     background-size: cover;
+    padding: 20px;
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 .menu-content {
-    font-size: 35px;
-    color: black;
-    height: 100%;
-    width: 1000px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
-.menu-content-items {
-    padding: 30px;
-    margin: 30px;
-    box-shadow: 0 3px 13px 1px rgb(155, 155, 155);
-    background-color: rgb(242, 242, 242);
 
-}
 
 .menu-content-items:hover {
     background-color: rgb(185, 185, 185);
@@ -153,25 +166,55 @@ body {
 
 
 
-.menu-content-item {
-    margin-top: -5px;
+.menu-content-items {
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 3px 13px 1px rgb(155, 155, 155);
+    background-color: rgb(242, 242, 242);
+    font-size: 35px;
+    color: black;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+}
+
+
+.menu-item-text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.menu-item-price-container {
+    display: flex;
+}
+
+
+.menu-content-item-name {
     font-size: 30px;
     color: black;
+    padding: 0;
 }
 
-.description {
+.menu-content-item-description {
     font-size: 17px;
-    margin-top: -40px;
     color: black;
+    margin-top: -25px;
 }
 
-.price {
-    float: right;
-    margin-top: -70px;
-    margin-right: 15px;
+.menu-content-item-price {
     background-color: black;
     color: white;
+    width: 100px;
+    height: 50px;
 }
+
+
+
 
 
 .wallahi {
@@ -206,25 +249,104 @@ body {
 
 
 
+
+
 .where-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1000px;
-    margin: auto;
 }
 
-.where-img {
-    width: 80%;
-    background-color: rgb(34, 21, 21);
+
+.where-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.where-text img {
+    width: 700px;
+}
+
+ .where-text p {
+    width: 900px;
+ }
+
+
+
+
+
+
+ .inv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+
+.offer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.offer-gallery {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 
 }
+
+.offer-gallery img {
+    width: 300px;
+    background-size: cover;
+    height: 300px;
+    border-radius: 200px;
+    padding: 50px;
+}
+
+
+
+.offer-text{
+   font-size: 20px;
+    width: 50%;
+}
+
+.offer-text-container {
+    display: flex;
+    justify-content: center;
+}
+
+.offer-lf {
+    font-size: 30px;
+    text-align: center;
+    padding: 80px;
+}
+
+.offer-title {
+    text-align: center;
+}
+
+.offer-lf a {
+    color: brown;
+}
+.offer-lf a:hover {
+    color: blue;
+}
+
+
+
+
+
+
 
 
 
 .footer-img img {
-    width: 8%;
+    width: 80px;
+    padding: 10px;
 }
 
 .footer-img, .footer-copyright {
@@ -255,52 +377,4 @@ body {
     border-bottom: none;
     font-size: 20px;
     padding: 10px;
-}
-
-
-.offer-container {
-    display: flex;
-    justify-content: center;
-}
-
-.offer-gallery img {
-    width: 15%;
-    background-size: cover;
-    height: 50%;
-    border-radius: 200px;
-    padding: 50px;
-}
-
-.offer-gallery {
-    display: flex;
-    justify-content: center;
-
-}
-
-.offer-text{
-   font-size: 20px;
-    width: 50%;
-    margin-top: -100px;
-}
-
-.offer-text-container {
-    display: flex;
-    justify-content: center;
-}
-
-.offer-lf {
-    font-size: 30px;
-    text-align: center;
-    padding: 80px;
-}
-
-.offer-title {
-    text-align: center;
-}
-
-.offer-lf a {
-    color: brown;
-}
-.offer-lf a:hover {
-    color: blue;
 }
