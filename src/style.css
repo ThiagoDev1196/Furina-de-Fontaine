@@ -58,7 +58,7 @@ body {
 
 
 .header {
-    background:url(./imagenes/header-image.jpg);
+    background:url(../imagenes/header-image.jpg);
     color: white;
     height: 630px;
     width: 100%;
@@ -116,6 +116,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0 10px 0;
 }
 
 .about-tittle, .menu-tittle, .where-title, .offer-title {
@@ -268,6 +269,7 @@ body {
 
 .where-text img {
     width: 700px;
+    padding: 20px 0 20px 0;
 }
 
  .where-text p {
