@@ -1,12 +1,16 @@
 * {
-    font-family: 'Square Peg', cursive;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
     box-sizing: border-box;
-
 }
 
 body {
     margin: 0;
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(32, 21, 11);
+    color: #b1977f;
+
 }
 
 
@@ -19,7 +23,7 @@ body {
 
 .header {
     background:url(../imagenes/header-image.jpg);
-    color: white;
+    color: rgb(240, 230, 210);
     height: 630px;
     background-repeat: no-repeat;
     text-align: center;
@@ -50,7 +54,7 @@ body {
 
 
 .topnav {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(20, 13, 6);
     width: 100%;
     height: 70px;
     position: fixed;
@@ -72,12 +76,12 @@ body {
 }
 
 .topnav ul li a {
-    color: black;
+    color: #b1977f;
     text-decoration: none;
     font-size: 19px;
     text-align: center;
     transition: all 0.3s ease;
-    padding: 22px 30px;
+    padding: 23px 30px;
 
 }
 
@@ -88,13 +92,15 @@ body {
 }
 
 .logotext {
-    color: black;
+    color: #b1977f;
     display: flex;
-    align-items: center;
+    align-items: center;    
+
 }
 
 .topnav a:hover {
-    background-color: gray;
+    background-color: rgb(40, 28, 15);
+    color: rgb(240, 230, 210);
 }
 
 
@@ -149,10 +155,12 @@ body {
 }
 
 .about-tittle, .menu-tittle, .where-title, .offer-title {
-    background: rgb(34, 24, 24);
-    color: white;
+    background: rgb(20, 13, 6);
+    color: rgb(240, 230, 210);
     width: 200px;
     text-align: center;
+    border-radius: 14px;
+    padding: 6px;
 }
 
 .about-image {
@@ -190,25 +198,27 @@ body {
 
 
 
-.menu-content-items:hover {
+/*.menu-content-items:hover {
     background-color: rgb(185, 185, 185);
 }
-
+*/
 
 
 .menu-content-items {
     padding: 30px;
     margin: 30px 0;
-    box-shadow: 0 3px 13px 1px rgb(155, 155, 155);
-    background-color: rgb(242, 242, 242);
+   /* box-shadow: 0 3px 13px 1px rgb(155, 155, 155); */
+    background-color: rgb(55, 40, 25);
+    ;
     font-size: 35px;
-    color: black;
+    color: #b1977f;
     width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 120px;
+    border-radius: 14px;
 
 }
 
@@ -224,14 +234,14 @@ body {
 
 .menu-content-item-name {
     font-size: 30px;
-    color: black;
     padding: 0;
+    color: rgb(240, 230, 210);
 }
 
 .menu-content-item-description {
     font-size: 17px;
-    color: black;
     margin-top: -25px;
+    color: rgb(200, 180, 160);
 }
 
 
@@ -242,8 +252,7 @@ body {
 
 
 .menu-content-item-price {
-    background-color: black;
-    color: white;
+    color:  rgb(245, 200, 150);
     width: 100px;
     height: 50px;
     display: flex;
@@ -265,25 +274,28 @@ body {
 
 .menu-book-text {
     font-size: 25px;
+    color: rgb(240, 230, 210)
 }
 
 .menu-book {
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    background-color: rgb(34, 24, 24);    
+    background-color: rgb(150, 120, 90); /* Marrón cálido para el botón */
     border-radius: 25px;
     padding: 20px;
     width: 300px;
 }
 
 .menu-book a {
-    color: white;
+    color: rgb(255, 255, 255); /* Texto blanco */    
     text-decoration: none;
+    font-weight: 600;
+
 }
 
 .menu-book:hover {
-    background-color: brown;
+    background-color: rgb(98, 76, 54);;
     transition: 0.2s;
 }
 
@@ -299,7 +311,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .where-title {
@@ -312,7 +323,8 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    line-height: 1.5;
+    font-size: 18px;
 
 }
 
@@ -364,7 +376,8 @@ body {
 
 
 .offer-text{
-   font-size: 20px;
+   font-size: 18px;
+   line-height: 1.5;
 }
 
 .offer-text-container {
@@ -383,7 +396,7 @@ body {
 }
 
 .offer-lf a {
-    color: brown;
+    color: rgb(245, 200, 150);
 }
 .offer-lf a:hover {
     color: white;
@@ -406,16 +419,17 @@ body {
     display: flex;
     font-size: 30px;
     align-items: center;
-    background: rgb(24, 21, 21);
+    background: rgb(20, 13, 6);
     border-bottom: 2px solid white;
-    color: white;
+    color: rgb(240, 230, 210);
     justify-content: center;
 }
 
+
 .footer {
     display: flex;
-    background-color: rgb(24, 21, 21);
-    color: white;
+    background-color: rgb(20, 13, 6);
+    color: rgb(240, 230, 210);
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -430,7 +444,11 @@ body {
 }
 
 .footer-about a, .footer-sm a, .footer-cafe a {
-    color: white;
+    color: rgb(240, 230, 210);
+}
+
+.footer-about a:hover, .footer-sm a:hover, .footer-cafe a:hover {
+    color: rgb(215, 200, 160);
 }
 
 .footer-copyright {
@@ -457,7 +475,7 @@ body {
         visibility: hidden;
         position: absolute;
         top: 70px;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(20, 13, 6);
         width: 100%;
 
     }
@@ -491,7 +509,7 @@ body {
 
     
 .topnav a:hover {
-    background-color: white;
+    background-color: rgb(20, 13, 6);
 }
 
 
