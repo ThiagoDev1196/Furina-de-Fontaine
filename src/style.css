@@ -23,7 +23,6 @@ body {
 
 .header {
     background:url(../imagenes/header-image.jpg);
-    color: rgb(240, 230, 210);
     height: 630px;
     background-repeat: no-repeat;
     text-align: center;
@@ -47,8 +46,30 @@ body {
     opacity: 0.6;
 }
 
+.header-text {
+    color: rgb(240, 230, 210);
+    z-index: 10;
+}
+
+
 .texto {
     z-index: 10;
+}
+
+.hero-button {
+    background-color: rgb(240, 230, 210);
+    color: rgb(40, 28, 15);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 35px 15px 35px;
+    height: 50px;
+    width: 200px;
+}
+
+.hero-button:hover {
+    background-color: white;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 
@@ -557,13 +578,23 @@ body {
     .header {
         height: 95vh;
     }
+    .header-text {
+        padding: 20px;
+    }
 
     .dark-overlay {
         height: 95vh;
     }
 
-    .texto {
-        font-size: 2rem;
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-button {
+        padding: 10px 25px 10px 25px;
+    }
+    .header-text p {
+        font-size: 20px;
     }
 
     .menu-content-items {

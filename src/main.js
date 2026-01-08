@@ -11,3 +11,9 @@ links.forEach(link => {
         nav.classList.remove('visible')
     })
 });
+
+document.getElementById("menuBtn").addEventListener("click", () => {
+  document.getElementById("menu").scrollIntoView({
+    behavior: "smooth"
+  });
+});
