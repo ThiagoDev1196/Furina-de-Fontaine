@@ -12,7 +12,7 @@ links.forEach(link => {
     })
 });
 
-document.getElementById("menuBtn").addEventListener("click", () => {
+document.getElementById("menubtn").addEventListener("click", () => {
   document.getElementById("menu").scrollIntoView({
     behavior: "smooth"
   });
