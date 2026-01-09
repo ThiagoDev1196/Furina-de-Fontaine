@@ -168,7 +168,7 @@ html {
     align-items: center;
     background-color: rgba(150, 120, 90, .1);
     padding: 20px;
-    max-width: 1800px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -321,7 +321,7 @@ html {
 .menu-book {
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 24px;
     background-color: rgb(55, 40, 25);
     border-radius: 25px;
     padding: 20px;
@@ -346,33 +346,34 @@ html {
 
 
 
-
-
-
-.where-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .where-title {
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.where-text {
+
+.where-container {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 40, 25);
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+.where-text {
     line-height: 1.5;
     font-size: 18px;
+    border-left: 2px solid rgb(240, 230, 210);
+    padding: 40px;
 
 }
 
-.where-text img {
-    width: 710px;
+.where-container img {
+    max-width: 350px;
     padding: 20px;
 }
 
@@ -587,8 +588,18 @@ html {
         margin-bottom: 20px;
     }
 
-    .where-text p {
-        width: 80%;
+
+    .where-container {
+        padding: 10px;
+    }
+
+    .where-container img {
+        max-width: 300px;
+    }
+
+    .where-text {
+        font-size: 15px;
+        padding: 10px;
     }
 
     .offer-gallery img {
@@ -656,8 +667,13 @@ html {
         padding: 5px;
     }
 
-    .where-text img {
-        width: 300px;
+    .where-container  {
+        flex-direction: column;
+    }
+
+    .where-text {
+        border-left: none;
+        border-top: 2px solid rgb(240, 230, 210); 
     }
 
 
@@ -711,8 +727,8 @@ html {
 
     .menu-book {
         margin:auto;
-        width: 150px;
-        font-size: 15px;
+        width: 270px;
+        font-size: 18px;
     }
 
     .title-container {
