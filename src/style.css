@@ -187,7 +187,7 @@ html {
     padding: 20px 0 10px 0;
     margin-top: 40px;
     font-size: 18px;
-    scroll-margin-top: 50px;  
+    scroll-margin-top: 60px;  
 }
 
 .about-tittle, .menu-tittle, .where-title, .offer-title {
@@ -216,7 +216,7 @@ html {
 
 
 
-
+/* Menu section */
 
 
 .menu-container {
@@ -314,7 +314,8 @@ html {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    padding: 80px ;
+    padding: 30px;
+    margin-top: 20px;
 }
 
 
@@ -347,7 +348,6 @@ html {
 
 
 .where-title {
-    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -358,7 +358,8 @@ html {
     justify-content: center;
     align-items: center;
     background-color: rgb(55, 40, 25);
-    max-width: 1000px;
+    max-width: 1400px;
+    width: 90%;
     margin: auto;
 }
 
@@ -367,90 +368,94 @@ html {
 .where-text {
     line-height: 1.5;
     font-size: 18px;
-    border-left: 2px solid rgb(240, 230, 210);
+    border-right: 2px solid rgb(240, 230, 210);
     padding: 40px;
 
 }
 
+.where-img {
+    flex: 1;
+    height: 500px;
+}
+
 .where-container img {
-    max-width: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
     padding: 20px;
+    object-position: center;
 }
 
 
 
 
+/* Invite section  */
 
-
-
+.offer-title {
+    margin-bottom: 30px;
+}
 
  .inv-container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1400px;
+    flex-shrink: 0;
+    margin: auto;
+    box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.4);
+    margin-bottom: 80px;
  }
 
- .offer-title {
-    margin-top: 10px;
+
+ .inv-img {
+    flex: 1.4;
+    height: 500px;
+    
+
  }
 
 
-.offer-container {
-    display: flex;
-    justify-content: center;
+ .inv-img img {
     width: 100%;
-}
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    object-position: center;
+ }
 
-.offer-gallery {
+ .inv-text-container {
     display: flex;
     justify-content: center;
+    margin:auto;
+    flex: 1;
+ }
+
+ .inv-text {
     padding: 20px;
+    font-size: 25px;
+    line-height: 1.7;
+ }
 
-}
-
-.offer-gallery img {
-    width: 300px;
-    background-size: cover;
-    height: 300px;
-    border-radius: 200px;
-    padding: 50px;
-}
-
-
-
-.offer-text{
-   font-size: 18px;
-   line-height: 1.5;
-}
-
-.offer-text-container {
-    display: flex;
-    justify-content: center;
-}
-
-.offer-lf {
-    font-size: 30px;
-    text-align: center;
-    padding: 80px;
-}
-
-.offer-title {
-    text-align: center;
-}
-
-.offer-lf a {
-    color: rgb(245, 200, 150);
-}
-.offer-lf a:hover {
+ .inv-text button {
+    background-color: rgb(40, 28, 15);
     color: white;
-}
+    font-size: 23px;
+    border: none;
+    border-radius: 14px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    justify-content: center;
+ }
 
+ .inv-text button:hover {
+    background-color: rgb(98, 76, 54);
+    transition: ease 0.4s;
+ }
 
-
-
-
-
+/* Footer */
 
 
 .footer-img img {
@@ -672,26 +677,28 @@ html {
     }
 
     .where-text {
-        border-left: none;
-        border-top: 2px solid rgb(240, 230, 210); 
+        border-right: none;
+        border-bottom: 2px solid rgb(240, 230, 210); 
     }
 
-
-
-    .offer-gallery img {
-        width: 100px;
-        height: 100px;
+    .inv-container {
+        flex-direction: column;
     }
 
-    .offer-text {
-        font-size: 15px;
+    .inv-img img {
+        height: 300px;
+        width: 100%;
     }
 
-    .offer-text-container {
-        padding: 0;
+    .inv-img {
+        width: 100%;
     }
 
-    .offer-lf {
+    .inv-text {
+        font-size: 22px;
+    }
+
+    .inv-text button {
         font-size: 22px;
     }
 
@@ -717,8 +724,8 @@ html {
         height: 100vh;
     }
 
-    .about-content, .where-text, .offer-text {
-        font-size: 13px;
+    .about-content, .where-text {
+        font-size: 15px;
     }
 
     .menu-book-text {
