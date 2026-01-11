@@ -599,7 +599,9 @@ html {
 
     .menu-content-items {
         width: 100%;
-        margin-bottom: 20px;
+        margin: 0px 0px;
+        margin-bottom: 50px;
+        
     }
 
 
@@ -709,6 +711,7 @@ html {
 
     .inv-text {
         font-size: 22px;
+        text-align: center;
     }
 
     .inv-text button {
@@ -743,6 +746,10 @@ html {
         font-size: 15px;
     }
 
+    .menu-content {
+        max-width: 300px;
+    }
+
     .menu-book-text {
         font-size: 17px;
     }
@@ -755,6 +762,15 @@ html {
 
     .title-container {
         font-size: 16px;
+    }
+
+    .inv-text button {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .inv-text {
+        font-size: 18px;
     }
 
 }
